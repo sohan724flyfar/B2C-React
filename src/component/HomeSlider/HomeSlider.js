@@ -1,32 +1,34 @@
 import React from "react";
+import image1 from "../../image/SliderImg/s1.png";
+import image2 from "../../image/SliderImg/s2.png";
+import image3 from "../../image/SliderImg/s3.png";
+import image4 from "../../image/SliderImg/s4.png";
 import Slider from "react-slick";
-import c1 from "../../image/companylogo/c1.png";
-import c2 from "../../image/companylogo/c2.png";
-import c3 from "../../image/companylogo/c3.png";
-import c4 from "../../image/companylogo/c4.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../HomeComponent/HomeComponent.css";
 
 const HomeSlider = () => {
   var settings = {
-    // dots: false,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    initialSlide: 0,
+    dots: false,
+    arrows: false,
     infinite: true,
     speed: 500,
-    autoplay: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    initialSlide: 0,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           infinite: true,
-          //   dots: false,
+          dots: true,
         },
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -36,35 +38,79 @@ const HomeSlider = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
         },
       },
     ],
   };
+
   return (
     <div>
       <Slider {...settings}>
-        <div>
-          <img src={c1} alt="img-lodding" />
+        <div
+          style={{
+            width: "600px",
+            height: "400px",
+          }}
+        >
+          <img
+            src={image1}
+            alt="img-loading"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
-        <div>
-          <img src={c2} alt="img-lodding" />
+        <div
+          style={{
+            width: "600px",
+            height: "400px",
+          }}
+        >
+          <img
+            src={image2}
+            alt="img-loading"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
-        <div>
-          <img src={c1} alt="img-lodding" />
+        <div
+          style={{
+            width: "600px",
+            height: "400px",
+          }}
+        >
+          <img
+            src={image3}
+            alt="img-loading"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
-        <div>
-          <img src={c3} alt="img-lodding" />
-        </div>
-        <div>
-          <img src={c4} alt="img-lodding" />
-        </div>
-        <div className="company-logo-width">
-          <img src={c3} alt="img-lodding" />
-        </div>
-        <div className="company-logo-width">
-          <img src={c4} alt="img-lodding" />
+        <div
+          style={{
+            width: "600px",
+            height: "400px",
+          }}
+        >
+          <img
+            src={image4}
+            alt="img-loading"
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+            }}
+          />
         </div>
       </Slider>
     </div>

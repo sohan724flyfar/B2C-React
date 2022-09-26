@@ -16,7 +16,7 @@ const HomeComponent = () => {
   return (
     <Box className="allbodycolor">
       <Header />
-      <section className="company-logo">
+      <section>
         <HomeSlider />
       </section>
       <section
