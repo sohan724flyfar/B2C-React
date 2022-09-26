@@ -1,0 +1,8 @@
+.homePage-parent {
+  background-image: url("../../image/landingPage/landingPageImage.png"),
+    linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+  background-repeat: no-repeat;
+  background-position: top 3% left 0%;
+  /* height: 100vh;
+  width: 100vw; */
+}
