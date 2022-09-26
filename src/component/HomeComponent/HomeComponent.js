@@ -123,68 +123,77 @@ const HomeComponent = () => {
               {/* <Box className="Buy-air-ticket"> */}
               <Grid className="Buy-air-tickets bbbb">
                 <Grid>
-                  {/* <Box color="white" className="img-text2">
-                    <img src={liner} alt="line" />{" "}
-                    <span>Our Spacial Service</span>
-                  </Box> */}
-                  <br />
-                  <h2 className="h2-text" style={{ lineHeight: "30px" }}>
-                    OUR NOTABLE{" "}
-                  </h2>
-                  <h1 className="h3-text" style={{ height: "45px" }}>
-                    CUSTOMER SUPPORT
-                  </h1>
-                  <br /> <br />
-                  <article className="article">
-                    <Box className="list-bullet">
-                      <li style={{ color: "#fff" }}>365 Assistance</li>
-                    </Box>
+                  <Box
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      flexDirection: "column",
+                    }}
+                  >
+                    <h1
+                      style={{
+                        fontSize: "30px",
+                        color: "#fff",
+                      }}
+                    >
+                      OUR{" "}
+                      <span style={{ color: "#dc143c", fontSize: "35px" }}>
+                        NOTABLE
+                      </span>{" "}
+                      CUSTOMER SUPPORT
+                    </h1>
 
-                    <Box className="customerSupport">
-                      <p>
-                        Our dedicated support team is prepared at any time to
-                        guide you to confirm your service. We are actively
-                        operational everyday, 365 days in a year (from 09 am -
-                        01 am) except weekend and government holidays.
-                      </p>
-                    </Box>
+                    <article className="article">
+                      <Box className="list-bullet">
+                        <li style={{ color: "#fff" }}>365 Assistance</li>
+                      </Box>
 
-                    <Box className="list-bullet">
-                      <li style={{ color: "#fff" }}>Need Tourism Support?</li>
-                    </Box>
+                      <Box className="customerSupport">
+                        <p>
+                          Our dedicated support team is prepared at any time to
+                          guide you to confirm your service. We are actively
+                          operational everyday, 365 days in a year (from 09 am -
+                          01 am) except weekend and government holidays.
+                        </p>
+                      </Box>
 
-                    <Box className="customerSupport">
-                      <p>
-                        We are giving service not only for flights and hotels,
-                        if you need Visa processing, Tour package, simply call
-                        Fly Far Agent support team.
-                      </p>
-                    </Box>
-                    <Box className="list-bullet">
-                      <li style={{ color: "#fff" }}>Offline Support</li>
-                    </Box>
+                      <Box className="list-bullet">
+                        <li style={{ color: "#fff" }}>Need Tourism Support?</li>
+                      </Box>
 
-                    <Box className="customerSupport">
-                      <p style={{ paddingBottom: "0px" }}>
-                        Our dedicated support team will try to ensure offline
-                        support for you excluding regular operational hours.
-                      </p>
+                      <Box className="customerSupport">
+                        <p>
+                          We are giving service not only for flights and hotels,
+                          if you need Visa processing, Tour package, simply call
+                          Fly Far Agent support team.
+                        </p>
+                      </Box>
+                      <Box className="list-bullet">
+                        <li style={{ color: "#fff" }}>Offline Support</li>
+                      </Box>
+
+                      <Box className="customerSupport">
+                        <p style={{ paddingBottom: "0px" }}>
+                          Our dedicated support team will try to ensure offline
+                          support for you excluding regular operational hours.
+                        </p>
+                      </Box>
+                    </article>
+
+                    <Box className="get-ticket-button">
+                      <a
+                        href="https://www.facebook.com/FlyFarInternational/"
+                        target="_blank"
+                        style={{
+                          textDecoration: "none",
+                        }}
+                        rel="noreferrer"
+                      >
+                        <Button className="get-ticket-btn">
+                          Get My Ticket Now
+                        </Button>
+                      </a>
                     </Box>
-                    {/* Fly Far International is ready to help you confirm your
-                    service at any time. Except for weekends and official
-                    holidays, we are open and operating every day of the year
-                    (from 9:00 am to 1:00 am). We provide assistance not just
-                    with booking hotels and flights, but also with visa
-                    processing and tour packages at lowest price. Outside of our
-                    usual business hours, we'll do our best to provide you with
-                    offline service. */}
-                  </article>
-                  <br />
-                  <br />
-                  <Box className="get-ticket-button">
-                    <Button className="get-ticket-btn">
-                      Get My Ticket Now
-                    </Button>
                   </Box>
                 </Grid>
               </Grid>
@@ -249,7 +258,16 @@ const HomeComponent = () => {
               <br />
               <br />
               <Box className="get-ticket-button">
-                <Button className="explore-more-btn">Explore More</Button>
+                <a
+                  href="https://www.facebook.com/FlyFarInternational/"
+                  target="_blank"
+                  style={{
+                    textDecoration: "none",
+                  }}
+                  rel="noreferrer"
+                >
+                  <Button className="explore-more-btn">Explore More</Button>
+                </a>
               </Box>
             </Box>
           </Grid>

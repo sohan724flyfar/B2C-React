@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../HomeComponent/HomeComponent.css";
+import { Box } from "@mui/system";
 
 const HomeSlider = () => {
   var settings = {
@@ -46,7 +47,7 @@ const HomeSlider = () => {
   };
 
   return (
-    <div>
+    <Box>
       <Slider {...settings}>
         <div
           style={{
@@ -54,15 +55,21 @@ const HomeSlider = () => {
             height: "400px",
           }}
         >
-          <img
-            src={image1}
-            alt="img-loading"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
+          <a
+            href="https://www.facebook.com/FlyFarInternational/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={image1}
+              alt="img-loading"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </a>
         </div>
         <div
           style={{
@@ -70,15 +77,21 @@ const HomeSlider = () => {
             height: "400px",
           }}
         >
-          <img
-            src={image2}
-            alt="img-loading"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
+          <a
+            href="https://www.facebook.com/FlyFarInternational/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={image2}
+              alt="img-loading"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </a>
         </div>
         <div
           style={{
@@ -86,34 +99,46 @@ const HomeSlider = () => {
             height: "400px",
           }}
         >
-          <img
-            src={image3}
-            alt="img-loading"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
+          <a
+            href="https://www.facebook.com/FlyFarInternational/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={image3}
+              alt="img-loading"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </a>
         </div>
-        <div
+        <Box
           style={{
             width: "600px",
             height: "400px",
           }}
         >
-          <img
-            src={image4}
-            alt="img-loading"
-            style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-          />
-        </div>
+          <a
+            href="https://www.facebook.com/FlyFarInternational/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src={image4}
+              alt="img-loading"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+              }}
+            />
+          </a>
+        </Box>
       </Slider>
-    </div>
+    </Box>
   );
 };
 
